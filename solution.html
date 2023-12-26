@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h2 class="d-flex justify-content-center">Solution</h2>
+    <div class="d-flex justify-content-center">
+        <table>
+            {% for i in ans %}
+                <tr>
+                    {% for j in i %}
+                        <td style="height: 40px;width: 40px;background-color: azure;">{{ j }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            <tr></tr>
+        </table>
+    </div>
+{% endblock %}
